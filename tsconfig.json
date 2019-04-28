@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "allowJs": false,
+    "module": "commonjs",
+    "target": "ES6",
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "lib": ["es2018"],
+    "noUnusedParameters": true
+  },
+  "include": ["./src/**/*"]
+}
