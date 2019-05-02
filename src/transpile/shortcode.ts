@@ -90,6 +90,7 @@ export function expandShortcodes(
       stack.push({ tag: tagName, attributes: parsedAttributes });
     }
   }
+  stack.push({ string: pageContent.slice(lastIndex) });
 
   return stack.reduce((content, stackItem) => {
     const nextHtmlPart =

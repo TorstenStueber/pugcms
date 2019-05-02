@@ -1,12 +1,11 @@
 {
-  "name": "pugcrm",
+  "name": "pugcms",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": "./build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "transpile": "ts-node src/index.ts",
     "build": "tsc",
     "prepublishOnly": "npm run build"
   },
@@ -16,7 +15,7 @@
   "dependencies": {
     "fefe": "^1.0.1",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.12.0",
     "pug": "^2.0.3",
     "rimraf": "^2.6.2",
     "shelljs": "^0.8.2"
