@@ -28,8 +28,7 @@ function expandShortcode(
       menuHtml
     });
   } catch (error) {
-    // console.log(error);
-    throw new Error(`Shortcode "${codeName}" not defined`);
+    throw new Error(`Problem to use shortcode "${codeName}": ${error}`);
   }
 }
 
