@@ -8,7 +8,12 @@ const stat = util.promisify(fs.stat);
 export async function recursiveReadDir(directoryName: string) {
   let results: string[] = [];
 
-  const entries = await readdir(directoryName);
+  let entries;
+  try {
+    entries = await readdir(directoryName);
+  } catch (error) {
+    return [];
+  }
 
   await Promise.all(
     entries.map(async entry => {
